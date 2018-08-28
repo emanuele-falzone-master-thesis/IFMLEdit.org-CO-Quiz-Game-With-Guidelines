@@ -34,7 +34,7 @@ Repository.prototype.insert = function (fields) {
 Repository.prototype.random = function () {
     var id,
         self = this,
-        language = 'en',
+        language = localStorage.getItem("settings.language"),
         filter = {
             language: language,
             id: { $ne: 'online' },

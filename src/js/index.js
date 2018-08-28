@@ -6,7 +6,9 @@ var ko = require('knockout'),
     controls = require('./controls'),
     navigations = require('./navigations'),
     actions = require('./actions'),
-    Promise = require('bluebird');
+    Promise = require('bluebird'),
+    resourceBundle = require('./i18'),
+    i18nextko = require('i18next-ko');
 
 Promise.config({ cancellation: true });
 
@@ -55,6 +57,17 @@ if (localStorage.getItem("question.level") === null) {
 if (localStorage.getItem("question.count") === null) {
     localStorage.setItem("question.count", "0");
 }
+
+if (localStorage.getItem("settings.language") === null) {
+    var lng = (navigator.language || "en").substring(0, 2);
+    if (["it","en"].indexOf(lng) > -1) {
+        localStorage.setItem("settings.language", lng);
+    } else {
+        localStorage.setItem("settings.language", "en");
+    }
+}
+
+i18nextko.init(resourceBundle, localStorage.getItem("settings.language"), ko);
 
 var application = new ApplicationViewModel();
 

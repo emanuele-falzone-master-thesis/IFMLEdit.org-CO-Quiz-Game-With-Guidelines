@@ -16,7 +16,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
     $.ajax({
         url: 'http://funergy.ifmledit.org/funergy/Services/ffv/getNextQuestion',
         data: {
-            language: 'en',
+            language: localStorage.getItem("settings.language"),
             level: localStorage.getItem("question.level"),
             oid: localStorage.getItem("question.oid")
 
@@ -29,7 +29,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
             content: obj.content,
             correct: obj.correct,
             explanation: obj.explaination,
-            language: 'en',
+            language: localStorage.getItem("settings.language"),
             level: localStorage.getItem("question.level")
         }).then(function () {
             return self.collection.answers.insert([{

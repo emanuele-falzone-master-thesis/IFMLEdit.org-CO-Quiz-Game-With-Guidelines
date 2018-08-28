@@ -257,3 +257,33 @@ c-system-event-back-3 > span > a{
 c-details-card-explanation, c-details-question-explanation {
     flex-grow: 1;
 }
+
+c-view-container-settings {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/logo-full.png"), url("../images/settings-background.jpg");
+    background-size: 90%, 100%;
+    background-position: top center, center bottom;
+    background-position-y: 5%, bottom;
+}
+
+c-form-settings select {
+    display: block;
+}
+
+c-form-settings {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.save-settings-btn {
+  display: inline-grid;
+}
+
+.select-lang {
+  flex-grow: 1;
+}

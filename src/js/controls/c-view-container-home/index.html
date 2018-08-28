@@ -1,14 +1,11 @@
 <span>
     <a class="options" 
-        data-bind="click: trigger.bind($data,'event-home-decode-a-card')">
-        decode a card
+        data-bind="click: trigger.bind($data,'event-home-decode-a-card'), i18n: 'btn_cardgame'">
     </a>
     <a class="options" 
-        data-bind="click: trigger.bind($data,'event-home-single-player')">
-        single player
+        data-bind="click: trigger.bind($data,'event-home-single-player'), i18n: 'btn_single_player'">
     </a>
-    <a class="waves-effect waves-light btn cyan col s12" 
-        data-bind="click: trigger.bind($data,'event-home-settings')">
-        settings
+    <a class="options" 
+        data-bind="click: trigger.bind($data,'event-home-settings'), i18n: 'btn_settings'">
     </a>
 </span>

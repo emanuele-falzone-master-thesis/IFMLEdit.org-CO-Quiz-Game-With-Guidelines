@@ -9,16 +9,17 @@
 <div class="result-text">
     <div data-bind="if: item">
         <span data-bind="if: item()['correctness']">
-            Great! Your answer is<br>CORRECT!
+            <span data-bind="i18n: 'ev_correct'">
+            </span>
         </span>
         <span data-bind="ifnot: item()['correctness']">
-            Oh no! Your answer is<br>WRONG!<br>Don't give up!
+            <span data-bind="i18n: 'ev_wrong'">
+            </span>
         </span>
     </div>
 </div>
 <div class="explanation">
     <a class="waves-effect waves-light btn cyan" 
-        data-bind="click: trigger.bind($data, 'event-question-explaination')">
-        explaination
+        data-bind="click: trigger.bind($data, 'event-question-explaination'), i18n: 'ev_explanation'">
     </a>
 </div>
