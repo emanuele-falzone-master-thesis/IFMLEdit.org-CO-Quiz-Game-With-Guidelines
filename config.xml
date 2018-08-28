@@ -6,6 +6,4 @@
     </description>
     <content src="index.html" />
     <access origin="*" />
-    <engine name="android" spec="^6.3.0" />
-    <plugin name="cordova-plugin-qrscanner" spec="^2.6.0" />
 </widget>

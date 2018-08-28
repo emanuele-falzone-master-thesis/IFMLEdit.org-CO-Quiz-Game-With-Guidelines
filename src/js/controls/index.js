@@ -10,6 +10,8 @@ exports.register = function () {
     // ==============
     require('./c-view-container-card').register();
     // ==============
+    require('./c-view-container-card-explanation').register();
+    // ==============
     require('./c-view-container-card-result').register();
     // ==============
     require('./c-view-container-home').register();
@@ -18,6 +20,8 @@ exports.register = function () {
     // ==============
     require('./c-details-card-question').register();
     // ==============
+    require('./c-details-card-explanation').register();
+    // ==============
     require('./c-details-card-result').register();
     // ==============
     require('./c-system-event-qr-decode').register();
@@ -25,6 +29,8 @@ exports.register = function () {
     require('./c-system-event-back-0').register();
     // ==============
     require('./c-system-event-back-1').register();
+    // ==============
+    require('./c-system-event-back-3').register();
     // ==============
     require('./c-system-event-back-2').register();
     // ==============

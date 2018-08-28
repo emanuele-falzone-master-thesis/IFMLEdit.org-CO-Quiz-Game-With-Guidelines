@@ -6,7 +6,7 @@ var ko = require('knockout'),
 
 function ViewModel(params) {
     var self = this;
-    self._repository = params.context.repositories['answers'];
+    self._repository = params.context.repositories['questions'];
     self.context = params.context;
     self.status = ko.observable('');
     self.item = ko.observable(undefined);
@@ -16,12 +16,11 @@ function ViewModel(params) {
     };
 }
 
-ViewModel.prototype.id = 'details-card-result';
+ViewModel.prototype.id = 'details-card-explanation';
 
 ViewModel.prototype.fields = {
     id: 1,
-    'correctness': 1,
-    'question': 1,
+    'explanation': 1,
 };
 
 ViewModel.prototype.waitForStatusChange = function () {
@@ -61,7 +60,7 @@ ViewModel.prototype.init = function (options) {
 };
 
 exports.register = function () {
-    ko.components.register('c-details-card-result', {
+    ko.components.register('c-details-card-explanation', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);

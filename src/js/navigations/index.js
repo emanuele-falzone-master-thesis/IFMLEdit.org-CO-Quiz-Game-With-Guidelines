@@ -14,11 +14,15 @@ exports.createNavigations = function (options) {
         // ==============
         'system-event-back-1': require('./system-event-back-1').createNavigation(options),
         // ==============
+        'system-event-back-3': require('./system-event-back-3').createNavigation(options),
+        // ==============
         'system-event-back-2': require('./system-event-back-2').createNavigation(options),
         // ==============
         'event-home-decode-a-card': require('./event-home-decode-a-card').createNavigation(options),
         // ==============
         'selected-card-answer': require('./selected-card-answer').createNavigation(options),
+        // ==============
+        'event-card-explanation': require('./event-card-explanation').createNavigation(options),
         // ==============
     };
 };
