@@ -28,10 +28,10 @@ ViewModel.prototype.dispose = function () {
     */
 }
 
-ViewModel.prototype.id = 'system-event-back-6';
+ViewModel.prototype.id = 'system-event-back-7';
 
 exports.register = function () {
-    ko.components.register('c-system-event-back-6', {
+    ko.components.register('c-system-event-back-7', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);

@@ -6,19 +6,26 @@ var ko = require('knockout');
 function ViewModel(params) {
     var self = this;
 
-    self.listener = function () {
-        self.trigger();
-    }
+    // TODO: Setup everything needed to start listening for the event
+    /*
+    example:
+    // let's trigger after 1 second
+    self.timer = setInterval(function () {
+        params.trigger();
+    }, 1000);
+    */
 
     self.context = params.context;
 
     self.trigger = params.trigger;
-
-    document.addEventListener("backbutton", self.listener, false);
 }
 
-ViewModel.prototype.dispose = function() {
-    document.removeEventListener("backbutton", this.listener, false);
+ViewModel.prototype.dispose = function () {
+    // TODO: Teardown everything you setup to listen for the event
+    /*
+    example [continue]:
+    clearInterval(this.timer);
+    */
 }
 
 ViewModel.prototype.id = 'system-event-back-0';

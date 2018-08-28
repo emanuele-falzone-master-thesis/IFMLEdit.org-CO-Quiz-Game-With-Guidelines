@@ -4,6 +4,8 @@
 exports.createNavigations = function (options) {
     return {
         // ==============
+        'event-load-settings-done': require('./event-load-settings-done').createNavigation(options),
+        // ==============
         'event-random-question-1-done': require('./event-random-question-1-done').createNavigation(options),
         // ==============
         'event-random-question-2-done': require('./event-random-question-2-done').createNavigation(options),
@@ -11,6 +13,8 @@ exports.createNavigations = function (options) {
         'event-random-question-3-done': require('./event-random-question-3-done').createNavigation(options),
         // ==============
         'event-read-card-done': require('./event-read-card-done').createNavigation(options),
+        // ==============
+        'event-save-settings-done': require('./event-save-settings-done').createNavigation(options),
         // ==============
         'event-update-level-1-done': require('./event-update-level-1-done').createNavigation(options),
         // ==============
@@ -30,6 +34,8 @@ exports.createNavigations = function (options) {
         // ==============
         'event-home-decode-a-card': require('./event-home-decode-a-card').createNavigation(options),
         // ==============
+        'event-home-settings': require('./event-home-settings').createNavigation(options),
+        // ==============
         'system-event-back-4': require('./system-event-back-4').createNavigation(options),
         // ==============
         'event-question-explanation-continue': require('./event-question-explanation-continue').createNavigation(options),
@@ -40,6 +46,8 @@ exports.createNavigations = function (options) {
         // ==============
         'event-question-result-continue': require('./event-question-result-continue').createNavigation(options),
         // ==============
+        'system-event-back-7': require('./system-event-back-7').createNavigation(options),
+        // ==============
         'selected-card-answer': require('./selected-card-answer').createNavigation(options),
         // ==============
         'event-card-explanation': require('./event-card-explanation').createNavigation(options),
@@ -47,6 +55,8 @@ exports.createNavigations = function (options) {
         'selected-question-answer': require('./selected-question-answer').createNavigation(options),
         // ==============
         'event-question-explaination': require('./event-question-explaination').createNavigation(options),
+        // ==============
+        'event-save-settings': require('./event-save-settings').createNavigation(options),
         // ==============
     };
 };

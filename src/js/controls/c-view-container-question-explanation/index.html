@@ -1,16 +1,9 @@
 <span>
-    <top-logo></top-logo>
     <!-- Explanation -->
-    <div class="dispose">
-        <c-details-question-explanation params="context: context"></c-details-question-explanation>
-        <div class="split">
-            <c-system-event-back-6 params="trigger: trigger.bind($data,'system-event-back-6')"></c-system-event-back-6>
-            <div class="fake">
-                <a class="waves-effect waves-light btn cyan col s12" 
-                    data-bind="click: trigger.bind($data,'event-question-explanation-continue')">
-                    continue
-                </a>
-            </div>
-        </div>
-    </div>
+    <c-details-question-explanation params="context: context"></c-details-question-explanation>
+    <a class="waves-effect waves-light btn cyan col s12" 
+        data-bind="click: trigger.bind($data,'event-question-explanation-continue')">
+        continue
+    </a>
+    <c-system-event-back-6 params="trigger: trigger.bind($data,'system-event-back-6')"></c-system-event-back-6>
 </span>

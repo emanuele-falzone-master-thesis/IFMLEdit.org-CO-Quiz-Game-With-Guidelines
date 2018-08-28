@@ -22,6 +22,8 @@ exports.register = function () {
     // ==============
     require('./c-view-container-question-result').register();
     // ==============
+    require('./c-view-container-settings').register();
+    // ==============
     require('./c-list-card-answers').register();
     // ==============
     require('./c-details-card-question').register();
@@ -38,6 +40,8 @@ exports.register = function () {
     // ==============
     require('./c-details-question-result').register();
     // ==============
+    require('./c-form-settings').register();
+    // ==============
     require('./c-system-event-qr-decode').register();
     // ==============
     require('./c-system-event-back-0').register();
@@ -53,5 +57,7 @@ exports.register = function () {
     require('./c-system-event-back-6').register();
     // ==============
     require('./c-system-event-back-5').register();
+    // ==============
+    require('./c-system-event-back-7').register();
     // ==============
 };

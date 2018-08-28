@@ -25,37 +25,6 @@ function ApplicationViewModel() {
     };
 }
 
-ko.bindingHandlers.clickDelay = {
-    init: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
-
-        function delayed() {
-            return function () {
-                var self = this,
-                    args = arguments;
-
-                if (this.correctness === true) {
-                    $(element).addClass("correct");
-                } else {
-                    $(element).addClass("wrong");
-                }
-
-                setTimeout(function () {
-                    valueAccessor().apply(self, arguments);
-                }, 1000);
-            };
-        }
-        ko.bindingHandlers.click.init.call(this, element, delayed, allBindings, viewModel, bindingContext);
-    }
-};
-
-if (localStorage.getItem("question.level") === null) {
-    localStorage.setItem("question.level", "1");
-}
-
-if (localStorage.getItem("question.count") === null) {
-    localStorage.setItem("question.count", "0");
-}
-
 var application = new ApplicationViewModel();
 
 ko.applyBindings(application);

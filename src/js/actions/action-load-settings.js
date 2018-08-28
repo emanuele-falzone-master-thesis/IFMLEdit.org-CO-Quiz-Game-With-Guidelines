@@ -20,11 +20,11 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    Materialize.toast('random question', 2000)
+    Materialize.toast('load settings', 2000)
     solve({
-        event: 'event-random-question-3-done', // done
+        event: 'event-load-settings-done', // done
         data: {
-            'question': '0',
+            'language': '0',
         }
     });
     // THIS CAN BE REMOVED (END)
