@@ -144,7 +144,7 @@ c-list-card-answers > div > span {
 
 /* View Container Result */
 
-c-view-container-card-result {
+c-view-container-card-result, c-view-container-card-explanation {
     background-image: url("../images/answer-background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@ c-details-card-result > div {
     display: flex;
     flex-direction: column-reverse;
     font-size: large;
-    height: 35%;
+    height: 25%;
     border-radius: 10px 10px 0 0;
 }
 
@@ -199,13 +199,38 @@ c-system-event-back-2 {
     background: #FFF69B;
 }
 
-c-system-event-back-2 > span, c-system-event-back-2 > span > a {
+c-system-event-back-3 {
+    display: block;
+    padding: 3%;
+    justify-content: space-between;
+    background:transparent;
+}
+
+.explanation {
+    display: block;
+    padding: 3%;
+    justify-content: space-between;
+    border-radius: 0;
+    background: #FFF69B;
+}
+
+c-system-event-back-2 > span, c-system-event-back-2 > span > a, c-system-event-back-3 > span, c-system-event-back-3 > span > a {
     display: block;
     width: 100%
 }
 
-c-system-event-back-2 > span > a {
+c-system-event-back-2 > span > a, c-system-event-back-3 > span > a {
     flex-basis: 100%;
     height: initial;
     background-color: #76961B !important;
+}
+
+.dispose {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+c-details-card-explanation {
+    flex-grow: 1;
 }
