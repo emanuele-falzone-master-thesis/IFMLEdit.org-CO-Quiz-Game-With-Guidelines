@@ -1,23 +1,35 @@
 /*jslint node: true, nomen: true */
 "use strict";
 
-var ko = require('knockout');
+var ko = require('knockout'),
+    $ = require('jquery');
 
 function ViewModel(params) {
     var self = this;
 
-    // TODO: Setup everything needed to start listening for the event
-    /*
-    example:
-    // let's trigger after 1 second
-    self.timer = setInterval(function () {
-        params.trigger();
-    }, 1000);
-    */
+    QRScanner.prepare(function (err, status) {
+        if (err) {
+            Materialize.toast('Access to camera denied', 2000);
+            return;
+        }
+
+        QRScanner.show(function (status) {
+            QRScanner.scan(function (err, contents) {
+                QRScanner.destroy();
+                if (err) {
+                    Materialize.toast('Error scanning Card', 2000);
+                    return;
+                }
+                self.trigger();
+            });
+        });
+    });
 
     self.context = params.context;
 
     self.trigger = params.trigger;
+   
+    //self.trigger();
 }
 
 ViewModel.prototype.dispose = function () {

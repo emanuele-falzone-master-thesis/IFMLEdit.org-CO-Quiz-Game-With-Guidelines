@@ -1,0 +1,210 @@
+[
+    {
+        "id": "5-it",
+        "content": "Lasciare apparecchi elettrici (per es TV, stereo) in stand-by non influenza la bolletta elettrica",
+        "correct": "Falso",
+        "explanation": "Un apparecchio in stand-by può consumare anche molta energia, anche fino al 10% del consumo dell'apparecchio quando è acceso",
+        "language": "it",
+        "level": "1"
+    },
+    {
+        "id": "102-it",
+        "content": "Si può creare elettricità dall'acqua?",
+        "correct": "Si",
+        "explanation": "Questo è ciò che avviene nelle centrali idroelettriche, che si possono vedere spesso nelle regioni di montagna.",
+        "language": "it",
+        "level": "1"
+    },
+    {
+        "id": "5-en",
+        "content": "Leaving electrical devices, such as the TV, on stand-by does not affect the electricity bill",
+        "correct": "false",
+        "explanation": "Standby power accounts for up to 10% of household electricity use. You can reduce the energy use simply by turning devices off using the on/off button rather than putting them on standby .",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "105-it",
+        "content": "Si può creare elettricità dalle onde?",
+        "correct": "Si",
+        "explanation": "Si usano piattaforme marine che catturano l'energia delle onde con delle boe e la trasformano nella rotazione di un generatore di corrente elettrica",
+        "language": "it",
+        "level": "1"
+    },
+    {
+        "id": "111-it",
+        "content": "Il mio frigo scalda, che vuol dire?",
+        "correct": "Niente, è normale che lo faccia",
+        "explanation": "Un frigorifero funziona rimuovendo il calore dall'interno e scaricandolo all'esterno; quindi è normale che una parte di esso si scaldi.",
+        "language": "it",
+        "level": "1"
+    },
+    {
+        "id": "11-en",
+        "content": "What are phantom loads?",
+        "correct": "Appliances that consume power when they are turned off but still plugged in",
+        "explanation": "A phantom load, also called standby power, is the power consumed by electronics and appliances while they are switched off. According to Lawrence Berkeley National Laboratory, in a typical American home these amount to almost 10 % of electricity use",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "44-en",
+        "content": "EU energy labels use letters to describe an appliance’s energy consumption, which letter denotes the MOST energy efficient types?",
+        "correct": "A",
+        "explanation": "The energy efficiency of an appliance is rated with classes from A to G on the label, A being the most energy efficient, G the least efficient. ",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "49-en",
+        "content": "Which one is a renewable energy source?",
+        "correct": "wind energy",
+        "explanation": "",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "72-en",
+        "content": "Which animal uses electricity to kill their prey?",
+        "correct": "Electric eel",
+        "explanation": "",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "53-en",
+        "content": "What is consuming more energy in your household?",
+        "correct": "A regular toothbrush",
+        "explanation": "Often, the charger is plugged in over the whole time, which is even increasing the energy consumption.",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "61-en",
+        "content": "I should take showers instead of baths to conserve energy.",
+        "correct": "Yes",
+        "explanation": "A shower uses about half the hot water that a bath does.",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "90-en",
+        "content": "A cell phone power adapter that is plugged into an outlet only uses electricity when the cell phone is connected to it. ",
+        "correct": "No",
+        "explanation": "",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "102-en",
+        "content": "Can you create electricity from water?",
+        "correct": "Yes",
+        "explanation": "That happens in hydro-power stations , which you can often see in mountain regions.",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "101-en",
+        "content": "All clothes should be ironed at once.",
+        "correct": "Yes",
+        "explanation": "Most of the electricity is used when the iron is getting warm, so it's better to iron all clothes  at once.",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "98-en",
+        "content": "Is it true that more energy is used to turn lights on and off than to leave them running?",
+        "correct": "No",
+        "explanation": "",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "105-en",
+        "content": "Can you create electricity from waves?",
+        "correct": "Yes",
+        "explanation": "Platforms at see capture the energy of waves with buoys and transform it into the rotation of a generator of electricity",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "111-en",
+        "content": "What if the back of my fridge gets hot?",
+        "correct": "Don't panic , it's normal",
+        "explanation": "A fridge works by removing heat from the inside and dumping it to the outside; so it's normal that a part of it gets hot.",
+        "language": "en",
+        "level": "1"
+    },
+    {
+        "id": "8-it",
+        "content": "Per cosa sta l'acronimo LED?",
+        "correct": "Light emitting diode",
+        "explanation": "I LED sono dispositivi a semiconduttori che producono luce quando viene applicata una corrente elettrica appropriata. Sono una delle tecnologie di illuminazione oggi più efficienti dal punto di vista energetico e sono in rapido sviluppo.",
+        "language": "it",
+        "level": "2"
+    },
+    {
+        "id": "6-en",
+        "content": "What percentage of a home’s energy use is consumed by water heater",
+        "correct": "More than 15%",
+        "explanation": "Water heaters account for nearly 17 percent of a home’s energy use, consuming more energy than all other household appliances combined",
+        "language": "en",
+        "level": "2"
+    },
+    {
+        "id": "14-en",
+        "content": "Which type of light bulb is the most efficient at converting energy into light?",
+        "correct": "LED",
+        "explanation": "LED bulbs produce an average of 85 lumens per watt of power used, about five times as much as an incandescent. ",
+        "language": "en",
+        "level": "2"
+    },
+    {
+        "id": "8-en",
+        "content": "What does LED stand for?",
+        "correct": "Light emitting diode",
+        "explanation": "LEDs are compound semiconductor devices that produce light when an appropriate electrical current is applied and are one of today's most energy-efficient and rapidly-developing lighting technologies",
+        "language": "en",
+        "level": "2"
+    },
+    {
+        "id": "22-en",
+        "content": "What is the electric current?",
+        "correct": "A flow of electric charge",
+        "explanation": "An electric current is a flow of electric charge. In electric circuits this charge is often carried by moving electrons in a wire.",
+        "language": "en",
+        "level": "2"
+    },
+    {
+        "id": "16-en",
+        "content": "What does the Jevons' Paradox say? ",
+        "correct": "Increased efficiency leads to increased consumption of resources",
+        "explanation": "The Jevons Paradox, or \"rebound effect,\" says that as energy efficiency goes up, making a resource more cost-effective, the overall consumption goes up as well",
+        "language": "en",
+        "level": "3"
+    },
+    {
+        "id": "51-en",
+        "content": "How can closing the door help to save energy?",
+        "correct": "Different rooms have different temperature levels that should not get mixed (bathroom warm and corridor cold).",
+        "explanation": "When rooms with different temperature level have direct access, the termostat has to work more intense than necessary.",
+        "language": "en",
+        "level": "3"
+    },
+    {
+        "id": "95-en",
+        "content": "What percent of the electricity used in an office building is consumed by lighting?",
+        "correct": "35 percent",
+        "explanation": "Lighting is the largest cost component of a commercial building's electricity bill and a significant portion of the total energy bill. ",
+        "language": "en",
+        "level": "3"
+    },
+    {
+        "id": "51-it",
+        "content": "Come può la chiusura delle porte di casa aiutare a risparmiare energia?",
+        "correct": "Stanze diverse hanno livelli di temperatura diversi che non devono essere mescolati (bagno caldo e corridoio freddo).",
+        "explanation": " Quando stanze con diverso livello di temperatura hanno una porta in comune, il termostato deve lavorare più del necessario.",
+        "language": "it",
+        "level": "3"
+    }
+]

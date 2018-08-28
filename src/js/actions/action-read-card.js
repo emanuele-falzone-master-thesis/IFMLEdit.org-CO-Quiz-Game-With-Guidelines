@@ -3,31 +3,64 @@
 
 var Promise = require('bluebird');
 
-function Action() { // add "options" parameters if needed
-    // TODO: Global Initialization
-    /*
-    example:
-    this.collection = options.repositories.mail;
-    */
+function Action(options) {
+    this.collection = {
+        questions: options.repositories.questions,
+        answers: options.repositories.answers
+    };
 }
-Action.prototype.run = function (parameters, solve) { // add "onCancel" parameters if needed
-    // Parameters:
 
-    // TODO: Execution
-    /*
-    example:
-    mail.find({subject: 'Re: ' + data.subject})
-        .then(solve);
-    */
-    // THIS CAN BE REMOVED (BEGIN)
-    Materialize.toast('read card', 2000)
-    solve({
-        event: 'event-read-card-done', // done
+Action.prototype.run = function (parameters, solve) { // add "onCancel" parameters if needed
+    var self = this;
+
+    $.ajax({
+        url: 'http://funergy.ifmledit.org/funergy/Services/ffv/getNextQuestion',
         data: {
-            'question': '0',
-        }
+            language: 'en',
+            level: localStorage.getItem("question.level"),
+            oid: localStorage.getItem("question.oid")
+
+        },
+        timeout: 1500
+    }).done(function (obj) {
+        localStorage.setItem("question.oid", obj.oid);
+        self.collection.questions.insert({
+            id: 'online',
+            content: obj.content,
+            correct: obj.correct,
+            explanation: obj.explaination,
+            language: 'en',
+            level: localStorage.getItem("question.level")
+        }).then(function () {
+            return self.collection.answers.insert([{
+                id: 'online-wrong',
+                content: obj.wrong,
+                correctness: false,
+                question: 'online'
+            }, {
+                id: 'online-correct',
+                content: obj.correct,
+                correctness: true,
+                question: 'online'
+            }]);
+        }).then(function () {
+            solve({
+                event: 'event-read-card-done',
+                data: {
+                    'question': 'online'
+                }
+            });
+        });
+    }).fail(function (xhr) {
+        self.collection.questions.random().then(function (result) {
+            solve({
+                event: 'event-read-card-done',
+                data: {
+                    'question': String(result.id)
+                }
+            });
+        });
     });
-    // THIS CAN BE REMOVED (END)
 };
 
 exports.createAction = function (options) {

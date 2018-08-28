@@ -1,33 +1,19 @@
-<ul class="side-nav" id="landmarks">
-</ul>
-<div class="navbar-fixed">
-    <nav class="cyan darken-1">
-        <div class="nav-wrapper">
-            <a href="#" data-activates="landmarks" 
-                class="button-collapse">
-                <i class="material-icons tiny">
-                    menu
-                </i>
-            </a>
-        </div>
-    </nav>
-</div>
-<div class="container">
-    <div class="row">
+<div>
+    <div>
         <span data-bind="if: active() === 'view-container-camera'">
-            <c-view-container-camera params="context: context" class="container"></c-view-container-camera>
+            <c-view-container-camera params="context: context"></c-view-container-camera>
         </span>
         <span data-bind="if: active() === 'view-container-card'">
-            <c-view-container-card params="context: context" class="container"></c-view-container-card>
+            <c-view-container-card params="context: context"></c-view-container-card>
         </span>
         <span data-bind="if: active() === 'view-container-card-explanation'">
             <c-view-container-card-explanation params="context: context" class="container"></c-view-container-card-explanation>
         </span>
         <span data-bind="if: active() === 'view-container-card-result'">
-            <c-view-container-card-result params="context: context" class="container"></c-view-container-card-result>
+            <c-view-container-card-result params="context: context"></c-view-container-card-result>
         </span>
         <span data-bind="if: active() === 'view-container-home'">
-            <c-view-container-home params="context: context" class="container"></c-view-container-home>
+            <c-view-container-home params="context: context"></c-view-container-home>
         </span>
     </div>
 </div>
