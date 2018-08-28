@@ -9,28 +9,29 @@ function Repository(options) {
         return new Repository(options);
     }
 
+    // TODO: initialization
+
+    // TODO: remove this BEGIN
     this.db = Promise.promisifyAll(new DataStore({
         filename: 'answers',
         inMemoryOnly: true
     }));
-
-    this.db.insert(require('./default'));
+    this.db.insert(require('./mock'));
+    // TODO: remove this END
 }
 
 Repository.prototype.findById = function (id) {
+    // TODO: implement the accessor to the datasource which returns a promise
+    // TODO: remove this BEGIN
     return this.db.findOneAsync({ id: id });
+    // TODO: remove this END
 };
 
 Repository.prototype.find = function (fields, project) {
+    // TODO: implement the accessor to the datasource which returns a promise
+    // TODO: remove this BEGIN
     return this.db.findAsync(fields, project);
-};
-
-Repository.prototype.insert = function (fields) {
-    var self = this;
-    return this.db.removeAsync({ question: 'online' }, { multi: true })
-        .then(function () {
-            return self.db.insert(fields);
-        });
+    // TODO: remove this END
 };
 
 exports.createRepository = Repository;
