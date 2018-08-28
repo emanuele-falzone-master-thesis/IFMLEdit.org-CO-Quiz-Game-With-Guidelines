@@ -1,9 +1,14 @@
 <span>
+    <hover-logo></hover-logo>
     <!-- Result -->
     <c-details-question-result params="context: context"></c-details-question-result>
-    <c-system-event-back-5 params="trigger: trigger.bind($data,'system-event-back-5')"></c-system-event-back-5>
-    <a class="waves-effect waves-light btn cyan col s12" 
-        data-bind="click: trigger.bind($data,'event-question-result-continue')">
-        continue
-    </a>
+    <div class="split colored">
+        <c-system-event-back-5 params="trigger: trigger.bind($data,'system-event-back-5')"></c-system-event-back-5>
+        <div class="fake">
+            <a class="waves-effect waves-light btn cyan col s12" 
+                data-bind="click: trigger.bind($data,'event-question-result-continue')">
+                continue
+            </a>
+        </div>
+    </div>
 </span>

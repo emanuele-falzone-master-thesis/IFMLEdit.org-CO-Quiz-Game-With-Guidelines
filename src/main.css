@@ -72,7 +72,7 @@ c-view-container-camera {
 
 /* View Container Question */
 
-c-view-container-card {
+c-view-container-card, c-view-container-question {
     padding: 5%;
     display: block;
     height: 100%;
@@ -82,7 +82,7 @@ c-view-container-card {
     background-position: center bottom;
 }
 
-c-details-card-question {
+c-details-card-question, c-details-question {
     background-color: #588f3e;
     border-radius: 10px;
     border-style: solid;
@@ -95,7 +95,7 @@ c-details-card-question {
     width: 100%;
 }
 
-c-details-card-question > div {
+c-details-card-question > div, c-details-question > div {
     padding: 5%;
     display: table-cell;
     vertical-align: middle;
@@ -103,12 +103,12 @@ c-details-card-question > div {
     font-size: 4vw;
 }
 
-c-list-card-answers {
+c-list-card-answers, c-list-question-answers {
     display: block;
     height: 60%;
 }
 
-c-list-card-answers > div {
+c-list-card-answers > div, c-list-question-answers > div {
     margin-top: 2%;
     background-color: #e2ecbb;
     border-radius: 10px;
@@ -123,10 +123,10 @@ c-list-card-answers > div {
     border-color: white;
 }
 
-c-list-card-answers > div:last-child {
+c-list-card-answers > div:last-child, c-list-question-answers > div:last-child {
     margin-bottom: 5%;
 }
-c-list-card-answers > div > span {
+c-list-card-answers > div > span, c-list-question-answers > div > span{
     display: table-cell;
     vertical-align: middle;
     font-size: 4vw;
@@ -144,7 +144,7 @@ c-list-card-answers > div > span {
 
 /* View Container Result */
 
-c-view-container-card-result, c-view-container-card-explanation {
+c-view-container-card-result, c-view-container-card-explanation, c-view-container-question-result, c-view-container-question-explanation {
     background-image: url("../images/answer-background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -154,7 +154,7 @@ c-view-container-card-result, c-view-container-card-explanation {
     height: 100%;
 }
 
-c-details-card-result > div {
+c-details-card-result > div, c-details-question-result > div {
     text-align: center;
 }
 
@@ -214,12 +214,14 @@ c-system-event-back-3 {
     background: #FFF69B;
 }
 
-c-system-event-back-2 > span, c-system-event-back-2 > span > a, c-system-event-back-3 > span, c-system-event-back-3 > span > a {
+c-system-event-back-2 > span, c-system-event-back-2 > span > a, 
+c-system-event-back-3 > span, c-system-event-back-3 > span > a {
     display: block;
     width: 100%
 }
 
-c-system-event-back-2 > span > a, c-system-event-back-3 > span > a {
+c-system-event-back-2 > span > a, 
+c-system-event-back-3 > span > a{
     flex-basis: 100%;
     height: initial;
     background-color: #76961B !important;
@@ -231,6 +233,27 @@ c-system-event-back-2 > span > a, c-system-event-back-3 > span > a {
     flex-direction: column;
 }
 
-c-details-card-explanation {
+.colored {
+    background-color: #FFF69B;
+}
+
+.split {
+    display: flex;
+    height: 10%;
+    border-radius: 0 0 10px 10px;
+    flex-direction: row;
+}
+ .fake > a, c-system-event-back-5 > a, c-system-event-back-6 > a {
+    width: 100%;
+    background-color: #76961B !important;
+ }
+
+ .split > * {
+    flex-basis: 50%;
+    padding: 1%;
+ }
+
+
+c-details-card-explanation, c-details-question-explanation {
     flex-grow: 1;
 }
